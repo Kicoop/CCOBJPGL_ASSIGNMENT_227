@@ -1,0 +1,23 @@
+public class App {
+
+
+    static boolean iWillReview = true; 
+    static boolean iwillNotFail = false;
+
+    public static void main(String[] args) throws Exception {
+
+        
+        App myApp = new App();
+      
+        assert iWillReview == true: "I SHALL NOT FAIL";
+     
+        myApp.Study(); 
+
+        assert iwillNotFail == true: "I WILL GRADUATE!";
+   
+    }
+
+    void Study(){
+        iwillNotFail = false; 
+    }
+}
